@@ -37,6 +37,10 @@
 </style>
 <body>
 
+    <footer class="text-white text-center py-2 bg-dark px-5">
+        <p class="mt-3 display-6">นายสรวิชญ์ สิทธิบวรสกุล ม.6/10 เลขที่ 11</p>
+    </footer>
+    
     <div class="container">
         <div class="mt-3">
             <div class="my-5 text-center">
@@ -54,6 +58,8 @@
                     <th style="width: 11.92%;">เลขประจำตัวนักเรียน</th>
                     <th>ชื่อ - นามสกุล</th>
                     <th>ระดับชั้น</th>
+                    <th>Email</th>
+                    <th>Username</th>
                 </tr>
             </thead>
             <tbody>
@@ -63,6 +69,8 @@
                     <td><?php echo $row["student_id"]?></td>
                     <td><?php echo $row["first_name"]." ".$row["last_name"]?></td>
                     <td><?php echo $row["class_id"]?></td>
+                    <td><?php echo $row["email"]?></td>
+                    <td><?php echo $row["user_name"]?></td>
                 </tr>
                 <?php }?>
             </tbody>
@@ -73,5 +81,8 @@
                 <div class="alert alert-danger" role="alert"><b>ไม่มีข้อมูลนักเรียน!</b></div>
             </div>  
     <?php } ?>
+    <footer class="text-white text-center py-2 bg-dark px-5">
+        <p class="mt-3 display-6">นายสรวิชญ์ สิทธิบวรสกุล ม.6/10 เลขที่ 11</p>
+    </footer>
 </body>
 </html>
